@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Stock API</title>
+  </head>
+  <body>
+    <!-- NAVBAR  -->
+    <nav class="navbar">
+      <a class="logo" href="#">Stock API</a>
+      <ul class="nav-links">
+        <li class="nav-item">
+          <a href="#">hello1</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">hello2</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">hello3</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="main-container">
+      <h2>Get Stats</h2>
+      <!-- FORM -->
+      <form action="" class="tickerForm">
+        <div>
+          <label for="ticker">Ticker:</label>
+          <br>
+          <input id="ticker" type="text" placeholder="ticker symbol" />
+        </div>
+        <div>
+          <label for="start">Start Date:</label>
+          <br>
+          <input id="start" type="text" placeholder="start date" />
+        </div>
+
+        <div>
+          <label for="end">End Date:</label>
+          <br>
+          <input id="end" type="text" placeholder="end date" />
+        </div>
+
+        <input type="button" value="Submit" />
+      </form>
+
+      <hr />
+
+      <h2>Results</h2>
+      <table>
+        <tr>
+          <th>Ticker</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Start Price</th>
+          <th>End Price</th>
+          <th>Gain / Loss</th>
+        </tr>
+        <tr>
+          <td>APPL</td>
+          <td>01/01/2002</td>
+          <td>10/02/2020</td>
+          <td>$100</td>
+          <td>$200</td>
+          <td>100%</td>
+        </tr>
+      </table>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
