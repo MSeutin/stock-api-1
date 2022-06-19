@@ -1,3 +1,4 @@
+let one = "apikey=";
 let form = document.querySelector("#my-form");
 let ticker = document.querySelector("#ticker");
 let start = document.querySelector("#start");
@@ -6,13 +7,15 @@ let tickerResult = document.querySelector(".tickerResult");
 let startDateResult = document.querySelector(".startDateResult");
 let endDateResult = document.querySelector(".endDateResult");
 let startPrice = document.querySelector(".startPrice");
+let two = "FXIA00Z3WNN45IAZ";
 let endPrice = document.querySelector(".endPrice");
 let profitLoss = document.querySelector(".profitLoss");
+
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   tickerResult.textContent = ticker.value;
-  let url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${ticker.value}&outputsize=full&apikey=${config.API_key}`;
+  let url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${ticker.value}&outputsize=full&${one}${two}`;
   getData(url, start.value, end.value);
 });
 
