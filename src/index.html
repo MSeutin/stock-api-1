@@ -27,25 +27,25 @@
     <div class="main-container">
       <h2>Get Stats</h2>
       <!-- FORM -->
-      <form action="" class="tickerForm">
+      <form id="my-form" class="tickerForm">
         <div>
           <label for="ticker">Ticker:</label>
           <br>
-          <input id="ticker" type="text" placeholder="ticker symbol" />
+          <input id="ticker" type="text" placeholder="IBM" value="IBM" />
         </div>
         <div>
           <label for="start">Start Date:</label>
           <br>
-          <input id="start" type="text" placeholder="start date" />
+          <input id="start" type="date" placeholder="2000-03-20" value="2000-03-20" />
         </div>
 
         <div>
           <label for="end">End Date:</label>
           <br>
-          <input id="end" type="text" placeholder="end date" />
+          <input id="end" type="date" placeholder="2022-06-16" value="2022-06-16" />
         </div>
-
-        <input type="button" value="Submit" />
+        <button type="submit">Submit</button>
+        <!-- <input type="button" value="Submit" /> -->
       </form>
 
       <hr />
@@ -61,15 +61,16 @@
           <th>Gain / Loss</th>
         </tr>
         <tr>
-          <td>APPL</td>
-          <td>01/01/2002</td>
-          <td>10/02/2020</td>
-          <td>$100</td>
-          <td>$200</td>
-          <td>100%</td>
+          <td class="tickerResult">APPL</td>
+          <td class="startDateResult">01/01/2002</td>
+          <td class="endDateResult">10/02/2020</td>
+          <td class="startPrice">$100</td>
+          <td class="endPrice">$200</td>
+          <td class="profitLoss">100%</td>
         </tr>
       </table>
     </div>
-    <script src="./index.js"></script>
+    <script src="../config.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
