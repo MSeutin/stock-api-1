@@ -182,3 +182,14 @@ th{
 .close-btn:hover {
   background-color: whitesmoke;
 }
+
+/* COLORS */
+
+.loading-colors{
+    background-color: var(--red);
+    color: var(--cream);
+}
+
+.loading-finished-colors{
+    background-color: var(--main-bg-color);
+}
